@@ -12,5 +12,10 @@
     "node_modules",
     "doc",
     "example"
+  ],
+  "files": [
+    "bin/wwwrtt.ts",
+    "lib/main.ts",
+    "typings/main.d.ts"
   ]
 }
