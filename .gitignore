@@ -1,1 +1,8 @@
 .idea/
+typings/
+
+*.js.*
+*.js
+bin/*.d.ts
+lib/*.d.ts
+example/*.d.ts
