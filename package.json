@@ -8,7 +8,8 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+	"test": "npm run lint && npm run build",
+    "lint": "tslint ./**/*.ts",
     "build": "typings install && tsc",
     "start": "node ./bin/wwwrtt.js"
   },
