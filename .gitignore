@@ -1,6 +1,7 @@
 .idea/
 typings/
 node_modules/
+dist/
 
 npm-debug.log
 
@@ -11,3 +12,5 @@ lib/*.d.ts
 example/*.d.ts
 
 *.bak
+
+*~

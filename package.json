@@ -2,17 +2,18 @@
   "name": "rememberthetask-api",
   "version": "0.0.1",
   "description": "Api for RememberTheTask bot",
-  "main": "./lib/main.js",
+  "main": "./dist/main.js",
+  "bin": "./dist/wwwrtt.js",
   "directories": {
     "doc": "doc",
     "example": "example"
   },
   "scripts": {
-	"clean": "rm -fv ./{bin,lib}/*.d.ts ./{bin,lib}/*.js*",
-	"test": "npm run lint && npm run build",
-    "lint": "tslint ./**/*.ts",
+    "clean": "rimraf ./dist/*",
+    "test": "npm run lint && npm run build",
+    "lint": "tslint ./src/**/*.ts",
     "build": "typings install && tsc",
-    "start": "node ./bin/wwwrtt.js"
+    "start": "node ./dist/wwwrtt.js"
   },
   "keywords": [
     "api",
@@ -22,12 +23,14 @@
   "author": "Davide Polonio poloniodavide@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "express" : "^4.13.1"
+    "express": "^4.13.1"
   },
   "devDependencies": {
     "dependency-check": "^2.5.1",
+    "rimraf": "^2.5.2",
     "tslint": "^3.5.0",
-    "typescript" : "^1.8.7",
-    "typings" : "^0.7.9"
+    "typedoc": "^0.3.12",
+    "typescript": "^1.8.7",
+    "typings": "^0.7.9"
   }
 }

@@ -6,7 +6,8 @@
     "declaration": true,
     "noImplicitAny": true,
     "noEmitOnError": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "outDir": "dist/"
   },
   "exclude": [
     "node_modules",
@@ -14,8 +15,8 @@
     "example"
   ],
   "files": [
-    "bin/wwwrtt.ts",
-    "lib/main.ts",
+    "src/wwwrtt.ts",
+    "src/main.ts",
     "typings/main.d.ts"
   ]
 }
