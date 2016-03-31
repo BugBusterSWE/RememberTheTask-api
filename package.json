@@ -8,6 +8,7 @@
     "example": "example"
   },
   "scripts": {
+	"clean": "rm -fv ./{bin,lib}/*.d.ts ./{bin,lib}/*.js*",
 	"test": "npm run lint && npm run build",
     "lint": "tslint ./**/*.ts",
     "build": "typings install && tsc",
