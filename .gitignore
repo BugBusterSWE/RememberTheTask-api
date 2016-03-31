@@ -9,3 +9,5 @@ npm-debug.log
 bin/*.d.ts
 lib/*.d.ts
 example/*.d.ts
+
+*.bak
