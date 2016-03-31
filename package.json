@@ -9,6 +9,7 @@
     "example": "example"
   },
   "scripts": {
+    "doc" : "typedoc --out ./doc/ ./src/",
     "clean": "rimraf ./dist/*",
     "test": "npm run lint && npm run build",
     "lint": "tslint ./src/**/*.ts",
