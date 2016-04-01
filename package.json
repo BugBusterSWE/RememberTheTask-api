@@ -12,15 +12,16 @@
     "typedoc": "typedoc",
     "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
     "clean": "rimraf ./dist/*",
-    "build": "tsc",
-    "rebuild": "npm run clean && npm run lint && npm run build",
-    "dev-launch": "npm run rebuild && npm start",
-    "test": "npm run lint && npm run build",
-    "lint": "tslint ./src/**/*.ts",
+    "build": "tsc -p ./src/",
+    "rebuild": "npm run clean && npm run build",
+    "dev-launch": "npm run rebuild && npm test && npm start",
+    "pretest": "tsc -p ./test/",
+    "test": "npm run lint && mocha ./test/*.js",
+    "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
-    "start": "node ./dist/wwwrtt.js",
+    "start": "node ./dist/src/wwwrtt.js",
 
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && rimraf /dist/**/*.d.ts"
   },
   "repository": {
     "type": "git",

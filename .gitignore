@@ -10,6 +10,7 @@ npm-debug.log
 *.js
 bin/*.d.ts
 lib/*.d.ts
+test/*.d.ts
 example/*.d.ts
 
 *.bak

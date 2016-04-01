@@ -7,16 +7,11 @@
     "noImplicitAny": true,
     "noEmitOnError": true,
     "sourceMap": true,
-    "outDir": "dist/"
+    "outDir": "../dist/"
   },
-  "exclude": [
-    "node_modules",
-    "doc",
-    "example"
-  ],
   "files": [
-    "src/wwwrtt.ts",
-    "src/app/main.ts",
-    "typings/main.d.ts"
+    "app/wwwrtt.ts",
+    "app/main.ts",
+    "../typings/main.d.ts"
   ]
 }
