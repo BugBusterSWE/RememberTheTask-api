@@ -9,14 +9,18 @@
     "example": "example"
   },
   "scripts": {
-    "doc" : "typedoc --out ./doc/ ./src/",
+    "typedoc": "typedoc",
+    "doc" : "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
+
     "clean": "rimraf ./dist/*",
-    "test": "npm run lint && npm run build",
-    "lint": "tslint ./src/**/*.ts",
-    "typings": "typings install",
     "build": "tsc",
     "rebuild": "npm run clean && npm run lint && npm run build",
     "dev-launch": "npm run rebuild && npm start",
+
+    "test": "npm run lint && npm run build",
+    "lint": "tslint ./src/**/*.ts",
+
+    "typings": "typings install",
     "start": "node ./dist/wwwrtt.js"
   },
   "keywords": [
