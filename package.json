@@ -10,20 +10,19 @@
   },
   "scripts": {
     "typedoc": "typedoc",
-    "doc" : "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
-
+    "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
     "clean": "rimraf ./dist/*",
     "build": "tsc",
     "rebuild": "npm run clean && npm run lint && npm run build",
     "dev-launch": "npm run rebuild && npm start",
-
     "test": "npm run lint && npm run build",
     "lint": "tslint ./src/**/*.ts",
-
     "typings": "typings install",
-    "start": "node ./dist/wwwrtt.js"
+    "start": "node ./dist/wwwrtt.js",
+
+    "prepublish": "npm run build"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/BugBusterSWE/RememberTheTask-api"
   },
@@ -41,7 +40,9 @@
     "express": "^4.13.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "dependency-check": "^2.5.1",
+    "mocha": "^2.4.5",
     "rimraf": "^2.5.2",
     "tslint": "^3.5.0",
     "typedoc": "^0.3.12",
