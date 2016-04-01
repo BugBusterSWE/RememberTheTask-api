@@ -16,7 +16,7 @@
   ],
   "files": [
     "src/wwwrtt.ts",
-    "src/main.ts",
+    "src/app/main.ts",
     "typings/main.d.ts"
   ]
 }
