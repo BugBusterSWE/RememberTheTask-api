@@ -23,6 +23,13 @@
     "typings": "typings install",
     "start": "node ./dist/wwwrtt.js"
   },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/BugBusterSWE/RememberTheTask-api"
+  },
+  "bugs": {
+    "url": "https://github.com/BugBusterSWE/RememberTheTask-api/issues"
+  },
   "keywords": [
     "api",
     "bot",
