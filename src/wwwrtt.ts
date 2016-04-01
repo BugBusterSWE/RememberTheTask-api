@@ -2,7 +2,7 @@
  * Created by davide on 26/03/16.
  */
 
-import * as test from "./main";
+import * as test from "./app/main";
 import * as express from "express";
 /*import {Express} from "express";*/
 
