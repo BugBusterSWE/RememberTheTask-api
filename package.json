@@ -20,7 +20,6 @@
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
     "start": "node ./dist/src/wwwrtt.js",
-
     "prepublish": "npm run build && rimraf /dist/**/*.d.ts"
   },
   "repository": {
@@ -43,6 +42,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "dependency-check": "^2.5.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "rimraf": "^2.5.2",
     "tslint": "^3.5.0",
