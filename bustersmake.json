@@ -11,11 +11,15 @@
 	},
 	"include": [
 	    "typings/main.d.ts"
+	],
+	"exclude": [
+		"*.d.ts",
+		"!*.ts"
 	]
     },
     "src": {
 	"compilerOptions": {
-	    "outDir": "../dist/"
+	    "outDir": "./dist/"
 	},
 	"base": "common"
     },
