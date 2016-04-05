@@ -9,6 +9,7 @@
     "example": "example"
   },
   "scripts": {
+	"tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && bustersmake",
     "typedoc": "typedoc",
     "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
     "clean": "rimraf ./dist/*",
@@ -19,7 +20,7 @@
     "test": "npm run lint && mocha ./test/*.js",
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
-    "start": "node ./dist/src/wwwrtt.js",
+    "start": "node ./dist/wwwrtt.js",
     "prepublish": "npm run build && rimraf /dist/**/*.d.ts"
   },
   "repository": {
@@ -40,6 +41,7 @@
     "express": "^4.13.1"
   },
   "devDependencies": {
+    "bustersmake": "latest",
     "chai": "^3.5.0",
     "dependency-check": "^2.5.1",
     "istanbul": "^0.4.2",
