@@ -9,7 +9,7 @@
     "example": "example"
   },
   "scripts": {
-	  "tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && bustersmake",
+	  "tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && burstsmake",
     "typedoc": "typedoc",
     "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
     "clean": "rimraf ./dist/*",
@@ -41,7 +41,7 @@
     "express": "^4.13.1"
   },
   "devDependencies": {
-    "bustersmake": "latest",
+    "burstmake": "latest",
     "chai": "^3.5.0",
     "dependency-check": "^2.5.1",
     "istanbul": "^0.4.2",
