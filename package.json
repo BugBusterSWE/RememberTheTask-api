@@ -21,7 +21,7 @@
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
     "start": "node ./dist/wwwrtt.js",
-    "prepublish": "npm run tsmake && npm run build && rimraf /dist/**/*.d.ts"
+    "prepublish": "npm run tsmake && npm run typings && npm run build && rimraf /dist/**/*.d.ts"
   },
   "repository": {
     "type": "git",
