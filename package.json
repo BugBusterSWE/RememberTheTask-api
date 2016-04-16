@@ -9,9 +9,9 @@
     "example": "example"
   },
   "scripts": {
-	  "tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && burstmake",
+    "tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && burstmake",
     "typedoc": "typedoc",
-    "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/",
+    "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/ && apidoc -i src/ -o docAPI/",
     "clean": "rimraf ./dist/*",
     "build": "tsc -p ./src/",
     "rebuild": "npm run clean && npm run build",
@@ -41,6 +41,7 @@
     "express": "^4.13.1"
   },
   "devDependencies": {
+    "apidoc": "^0.15.1",
     "burstmake": "latest",
     "chai": "^3.5.0",
     "dependency-check": "^2.5.1",
