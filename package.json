@@ -9,7 +9,7 @@
     "example": "example"
   },
   "scripts": {
-    "tsmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && burstmake",
+    "burstmake": "rimraf ./**/*.*~ && rimraf ./**/tsconfig.json && burstmake",
     "typedoc": "typedoc",
     "doc": "npm run typedoc -- --options typedoc.json --out ./doc/ ./src/ && apidoc -i src/ -o docAPI/",
     "clean": "rimraf ./dist/*",
@@ -21,7 +21,7 @@
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
     "start": "node ./dist/wwwrtt.js",
-    "prepublish": "npm run tsmake && npm run typings && npm run build && rimraf /dist/**/*.d.ts"
+    "prepublish": "npm run burstmake && npm run typings && npm run build && rimraf /dist/**/*.d.ts"
   },
   "repository": {
     "type": "git",
