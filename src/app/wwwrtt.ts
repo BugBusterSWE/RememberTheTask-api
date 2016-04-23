@@ -10,4 +10,4 @@ import * as express from "express";
 let app : express.Express = express();
 
 
-test.HelloWorld();
+test.HelloWorld("test");
