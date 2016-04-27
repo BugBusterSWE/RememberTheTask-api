@@ -6,7 +6,7 @@ doc/
 docAPI/
 
 npm-debug.log
-./**/tsconfig.json
+**/tsconfig.json
 
 *.js.*
 *.js
