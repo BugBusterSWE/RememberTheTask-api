@@ -2,6 +2,8 @@
  * Created by davide on 26/03/16.
  */
 
+
+/* tslint:disable */
 /**
  * @api {get} /user/:id Read data of a User
  * @apiVersion 0.2.0
@@ -9,7 +11,9 @@
  * @apiGroup User
  * @apiPermission user
  *
- * @apiDescription Compare Verison 0.3.0 with 0.2.0 and you will see the green markers with new items in version 0.3.0 and red markers with removed items since 0.2.0.
+ * @apiDescription Compare Verison 0.3.0 with 0.2.0 and you will see the green
+ * markers with new items in version 0.3.0 and red markers with removed items
+ * since 0.2.0.
  *
  * @apiParam {Number} id The Users-ID.
  *
@@ -44,6 +48,7 @@
  * @return {string} Il ritorno
  * 
  */
+/* tslint:enable */
 export function HelloWorld( s : string ) : string {
     console.log("Hello World");
     return "Hello";
