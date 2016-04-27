@@ -29,11 +29,11 @@ export default class Calculator {
 
         return diff;
     }
-    
+
     molt (x : number, y : number) : number {
-        
+
         let molt : number = x * y;
-        
+
         return molt;
     }
 }
