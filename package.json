@@ -21,7 +21,8 @@
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
     "start": "node ./dist/wwwrtt.js",
-    "prepublish": "npm run burstmake && npm run typings && npm run build && rimraf /dist/**/*.d.ts"
+    "postinstall": "npm run burstmake && npm run typings",
+    "prepublish": "npm run build && npm test && rimraf /dist/**/*.d.ts"
   },
   "repository": {
     "type": "git",
