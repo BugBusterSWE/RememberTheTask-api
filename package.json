@@ -17,7 +17,7 @@
     "rebuild": "npm run clean && npm run build",
     "dev-launch": "npm run rebuild && npm test && npm start",
     "pretest": "tsc -p ./test/",
-    "test": "npm run lint && mocha ./test/*.js",
+    "test": "rimraf ./**/*.d.ts && npm run lint && mocha ./test/*.js",
     "lint": "tslint ./{src,test}/**/*.ts",
     "typings": "typings install",
     "start": "node ./dist/wwwrtt.js",

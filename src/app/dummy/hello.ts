@@ -2,14 +2,14 @@
  * A simple hello worl class
  */
 export default class HelloWorld {
-    
+
     sayHello ( to : string ) : string {
-        
-        if (to == ""){
-            
+
+        if (to == "") {
+
             return undefined;
         }
-        
+
         return "Hello " + to;
     }
 }
